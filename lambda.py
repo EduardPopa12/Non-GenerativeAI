@@ -3,7 +3,6 @@ import json
 import os
 
 def lambda_handler(event, context):
-    # Initialize AWS clients
     ec2_client = boto3.client('ec2')
     s3_client = boto3.client('s3')
     unattached_volumes = []
